@@ -55,28 +55,6 @@ sample2,normal,0.3,0.9,1.1,...
 
 
 
-### Manual Pipeline Steps
-
-```python
-from project443 import *
-
-# Load and preprocess data
-X, y, y_encoded, sample_ids, le = load_data("data.csv")
-
-# Preprocess features
-preprocessor = DataPreprocessor(max_features=5000)
-X_processed = preprocessor.fit_transform(X, y_encoded)
-
-# Apply dimensionality reduction
-dim_reducer = DimensionalityReducer()
-reduced_data = dim_reducer.fit_transform_pca(X_processed, y_encoded)
-
-# Evaluate models
-evaluator = ModelEvaluator()
-model = RandomForestClassifier(random_state=42)
-results = evaluator.evaluate_model(model, X_processed, y_encoded, "RF")
-```
-
 ## Pipeline Components
 
 ### 1. Data Preprocessing (`DataPreprocessor`)

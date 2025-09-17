@@ -53,27 +53,7 @@ sample1,cancer,0.5,1.2,0.8,...
 sample2,normal,0.3,0.9,1.1,...
 ```
 
-## Usage
 
-### Basic Usage
-
-```python
-from project443 import run_pipeline
-
-# Run the complete pipeline
-results = run_pipeline("path/to/your/data.csv")
-```
-
-### Advanced Usage
-
-```python
-# Customize preprocessing and SMOTE settings
-results = run_pipeline(
-    file_path="data.csv",
-    use_smote=True,        # Apply SMOTE for class balancing
-    max_features=5000      # Maximum features after selection
-)
-```
 
 ### Manual Pipeline Steps
 

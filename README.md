@@ -196,26 +196,4 @@ smote = SMOTE(random_state=42, k_neighbors=1)
 LogisticRegression(max_iter=2000)
 ```
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Citation
-
-If you use this pipeline in your research, please cite:
-
-```
-Microarray Analysis Pipeline
-https://github.com/yourusername/microarray-pipeline
-```
-
-## Contact
-
-For questions or issues, please open an issue on GitHub or contact [your-email@domain.com].

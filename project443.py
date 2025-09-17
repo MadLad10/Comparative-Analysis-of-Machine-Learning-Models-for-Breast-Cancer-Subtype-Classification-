@@ -493,7 +493,7 @@ def run_pipeline(file_path, use_smote=True, max_features=5000):
     }
 
 if __name__ == "__main__":
-    file_path = r"C:\Users\T2510609\Downloads\cse443\Breast_GSE45827.csv"
+    file_path = r".....\Breast_GSE45827.csv"
     
     results = run_pipeline(file_path, use_smote=True, max_features=5000)
     
@@ -506,4 +506,5 @@ if __name__ == "__main__":
     print(f"Best Accuracy: {results['best_accuracy']:.4f}")
     print(f"Total Models Evaluated: {len(results['baseline_summary']) + len(results['optimized_summary'])}")
     print("Specialized models (PAM, DiagonalLDA) tested on full, statistical, and PCA data")
+
     print("Memory-efficient preprocessing used (max 5000 features)")
